@@ -1,12 +1,13 @@
 import { } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/estilo.css';
+import '../css/style.css';
 import Produto from '../assets/produto.png'
 
 function Nav() {
   return (
     <>
-      <header className="menu">
+      <header>
         <nav className="topnav" id="myTopnav">
           <div className="topnav" id="myTopnav">
             <a className="navbar-brand disabled" aria-disabled="true">

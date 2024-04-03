@@ -1,5 +1,6 @@
 import {} from 'react';
 import '../css/estilo.css';
+import '../css/style.css';
 
 function Contato() {
   return (

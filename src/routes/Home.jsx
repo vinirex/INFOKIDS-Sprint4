@@ -1,5 +1,5 @@
-import { } from 'react';
-import '../css/estilo.css';
+import {} from 'react';
+import '../css/style.css';
 import Produto from '../assets/produto.png'
 
 function Home() {

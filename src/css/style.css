@@ -6,6 +6,10 @@
     src: url('/fonts/static/Rubik-Regular.ttf');
 }
 
+h1{
+    color: #ffff;
+}
+
 header {
     background: linear-gradient(90deg, rgba(12, 53, 106, 1) 0%, rgba(1, 116, 190, 1) 100%);
     padding: 3rem;

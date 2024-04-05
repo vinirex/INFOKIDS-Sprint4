@@ -20,7 +20,7 @@ function Sobre() {
             </div>
             <div>
                 <img className="ppl-grp" src={didoff} alt="Victor Didoff"/>
-                <p clasNames="txt">Victor Didoff</p>
+                <p className="txt">Victor Didoff</p>
             </div>
             <div>
                 <img className="ppl-grp" src={diogo} alt="Diogo Julio"/>

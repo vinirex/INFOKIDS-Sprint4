@@ -1,15 +1,32 @@
 import {} from 'react';
 import '../css/estilo.css';
 import '../css/style.css';
+import vini from '../assets/vini-img.png'
+import diogo from '../assets/diogo-img.png'
+import didoff from '../assets/victor-img.png'
 
 function Sobre() {
   return (
     <>
-      <section className="sobre">
-        <h1>Sobre</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam numquam expedita cumque iure, praesentium recusandae, dolorem voluptatem amet dolore laborum voluptatum minima dolorum vitae corrupti non quasi dolores unde illum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis iste atque maxime velit illum magni quasi? Consequuntur expedita reprehenderit minus, officia culpa quis, voluptas quisquam eligendi in dolore distinctio sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi doloremque minus eligendi voluptate ad ipsam quod, incidunt animi ullam dolor deserunt at a hic dolorem asperiores aperiam, eius repellat molestias;
-        </p>
-      </section>
+        <section id="home">
+            <h1>
+                Sobre o nosso grupo
+            </h1>
+        </section>
+        <section id="grupo">
+            <div>
+                <img className="ppl-grp" src={vini} alt="Vinicius Silva"/>
+                <p class="txt">Vinicius Silva</p>
+            </div>
+            <div>
+                <img className="ppl-grp" src={didoff} alt="Victor Didoff"/>
+                <p clasNames="txt">Victor Didoff</p>
+            </div>
+            <div>
+                <img className="ppl-grp" src={diogo} alt="Diogo Julio"/>
+                <p className="txt">Diogo Julio</p>
+            </div>
+        </section>
     </>
   );
 }

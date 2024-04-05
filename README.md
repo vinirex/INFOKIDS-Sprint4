@@ -1,7 +1,6 @@
 # 1ESPR Web Development
 # Projeto Site Informativo ICR em REACT
 
-Esse ReadMe.MD tem como objetivo esclarecer todas as duvidas sobre os dados e codigos contidos na pasta `frontend` do repositorio.
 
 ## Time
 
@@ -15,7 +14,7 @@ Esse ReadMe.MD tem como objetivo esclarecer todas as duvidas sobre os dados e co
 abrir o projeto no vscode e no terminal digitar 
 
 
-npm install
+´npm install´
 
 depois digitar
 

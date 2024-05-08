@@ -1,5 +1,5 @@
 import { } from 'react';
-import '../css/style.css';
+import '../css/style.scss';
 import Produto from '../assets/med-phone.png'
 import Kid from '../assets/kid.png'
 

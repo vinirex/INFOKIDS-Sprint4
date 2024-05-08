@@ -1,6 +1,6 @@
 import {} from 'react';
 import '../css/estilo.css';
-import '../css/style.css';
+import '../css/style.scss';
 import vini from '../assets/vini-img.png'
 import diogo from '../assets/diogo-img.png'
 import didoff from '../assets/victor-img.png'

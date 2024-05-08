@@ -9,7 +9,6 @@ $secondary-color: #0174BE;
 $white: #ffffff;
 $dark: #000000;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 * {
     font-family: 'Rubik',sans-serif;
     padding: 0;
@@ -42,4 +41,56 @@ body {
     background-color: white;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.Title-Image {
+  display: flex;
+  width: 100%;
+}
+
+.div-Title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../img/mainpage.jpg'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.Title{
+  width: 40%;
+  font-weight: bold;
+  font-size: 3em;
+  color: var(--dark-text-color);
+}
+
+.div-Button {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: fixed;
+  width: 15%;
+  bottom: 5%;
+  right: 5%;
+}
+
+.div-Button>p {
+  margin-bottom: 0.4em;
+  font-weight: 700;
+}
+
+.btn-PdC {
+  padding: 0.25em;
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  transition: 450ms ease-in-out;
+}
+
+.btn-PdC:hover {
+  color: var(--white);
+  background-color: var(--primary-color);
 }

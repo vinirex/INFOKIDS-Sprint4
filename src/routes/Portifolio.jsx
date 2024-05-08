@@ -1,6 +1,6 @@
 import {} from 'react';
 import '../css/estilo.css';
-import '../css/style.css';
+import '../css/style.scss';
 
 function Portifolio() {
 

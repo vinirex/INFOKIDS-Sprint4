@@ -1,4 +1,4 @@
-@import './root.css';
+@import './style.scss';
 /* responsive */
 
 @media screen and (max-width: 920px) {

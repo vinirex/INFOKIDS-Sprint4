@@ -7,6 +7,7 @@ import Sobre from './routes/Sobre.jsx';
 import Portifolio from './routes/Portifolio.jsx'
 import Contato from './routes/Contato.jsx'
 import Error from './routes/Error.jsx';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 
 const router = createBrowserRouter ([

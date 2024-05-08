@@ -1,8 +1,7 @@
 import { } from 'react';
 import '../css/estilo.css';
-import '../css/style.css';
-import sub from '../assets/sub.png'
-import med from '../assets/hand -w-syringe.png'
+import sub from '../assets/sub.png';
+import med from '../assets/hand -w-syringe.png';
 
 function Contato() {
   return (

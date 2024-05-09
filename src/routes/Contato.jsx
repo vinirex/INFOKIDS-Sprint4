@@ -59,7 +59,7 @@ function Contato() {
           <label form="quantidade">Data do Exame:</label>
           <input type="date" name="data" id="data" />
 
-          <button type="button" id="enviar" onClick={mostrarExame}>Pronto</button>
+          <button type="button" id="enviar" onClick={mostrarExame}>Agendar</button>
         </form>
         <h1 id='text'>
           Bem vindo(a) ao portal HC,

@@ -1,12 +1,51 @@
 import { } from 'react';
 import '../css/estilo.css';
+import '../css/style.scss';
 import sub from '../assets/sub.png';
 import med from '../assets/hand -w-syringe.png';
 
+
 function Contato() {
+
+  
+  
+  function mostrarExame (){
+      let name = document.getElementById('nome').value;
+      let exam = document.getElementById('exames').value;
+      let date = document.getElementById('data').value;
+  
+      document.getElementById('exsangue-video').classList.add('display-none');
+      document.getElementById('exsangue-video').classList.remove('display-center');
+      document.getElementById('exsangue').classList.add('display-none');
+      document.getElementById('reson-video').classList.add('display-none');
+      document.getElementById('reson-video').classList.remove('display-center');
+      document.getElementById('reson').classList.add('display-none');
+  
+      document.querySelector('#text').innerHTML = `<h1>Bem vindo(a) ${name} ao portal HC! Abaixo tem tudo que prescisa saber.<h1>`;
+      if (exam === 'Exame de Sangue') {
+          document.getElementById('form-test').classList.remove('active')
+          document.getElementById('exsangue-video').classList.remove('display-none');
+          document.getElementById('exsangue-video').classList.add('display-center');
+          document.getElementById('exsangue').classList.remove('display-none');
+      }
+      else if (exam === 'Resonâcia Magnética'){
+          document.getElementById('form-test').classList.remove('active')
+          document.getElementById('reson-video').classList.remove('display-none');
+          document.getElementById('reson-video').classList.add('display-center');
+          document.getElementById('reson').classList.remove('display-none');
+      }
+
+      const btnSend = document.getElementById('enviar');
+      btnSend.addEventListener('click', mostrarExame);
+
+  }
+  
+
+
+
   return (
     <>
-      <section id="form-test" class="active">
+      <section id="form-test" className="active">
         <form id="form-insert">
           <label form="nome">Nome:</label>
           <input type="text" name="nome" id="nome" />
@@ -20,32 +59,32 @@ function Contato() {
           <label form="quantidade">Data do Exame:</label>
           <input type="date" name="data" id="data" />
 
-          <button type="button" id="enviar">Pronto</button>
+          <button type="button" id="enviar" onClick={mostrarExame}>Pronto</button>
         </form>
-        <h1>
+        <h1 id='text'>
           Bem vindo(a) ao portal HC,
           Qual exame você irá fazer?
         </h1>
       </section>
-      <section id="exsangue-video" class="yellow-gradien display-none">
+      <section id="exsangue-video" className="yellow-gradien display-none">
         <div className='iframe'>
           <iframe loading="lazy" className='iframe-w' src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF0o077CFU&#x2F;watch?embed"
             allowfullscreen="allowfullscreen" allow="fullscreen">
           </iframe>
         </div>
       </section>
-      <section id="exsangue" class="blue-gradien display-none">
+      <section id="exsangue" className="blue-gradien display-none">
         <h2>Exame de Sangue</h2>
-        <div class="container">
-          <div class="contlist">
-            <p class="content">
+        <div className="container">
+          <div className="contlist">
+            <p className="content">
               Um exame de sangue é um procedimento médico em que uma amostra de sangue é coletada para análise
               laboratorial. Essa análise pode revelar uma variedade de informações sobre a saúde de uma pessoa,
               como
               contagem de células sanguíneas, níveis de glicose, função dos órgãos, presença de infecções e muito
               mais.
             </p>
-            <ul class="text-list">
+            <ul className="text-list">
               <li><b>Jejum:</b> Em alguns casos, você pode precisar não comer ou beber nada, exceto água, por 8 a
                 12
                 horas
@@ -62,26 +101,26 @@ function Contato() {
                 normalmente se tira sangue.</li>
             </ul>
           </div>
-          <img class="img-ani" src={med} alt="hand with syringe"/>
+          <img className="img-ani" src={med} alt="hand with syringe"/>
         </div>
       </section>
-      <section id="reson-video" class="yellow-gradien display-none">
+      <section id="reson-video" className="yellow-gradien display-none">
         <div className='iframe'>
           <iframe loading="lazy" className='iframe-w' src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF0ozYMfWQ&#x2F;watch?embed"
             allowfullscreen="allowfullscreen" allow="fullscreen">
           </iframe>
         </div>
       </section>
-      <section id="reson" class="blue-gradien display-none">
+      <section id="reson" className="blue-gradien display-none">
         <h2>Resonâcia Magnética</h2>
-        <div class="container">
-          <div class="contlist">
-            <p class="content">
+        <div className="container">
+          <div className="contlist">
+            <p className="content">
               A ressonância magnética (RM) é um exame médico que usa ímãs e ondas de rádio para criar imagens
               detalhadas do interior do corpo. É muito útil para diagnosticar problemas em órgãos, tecidos moles,
               ossos e outras estruturas.
             </p>
-            <ul class="text-list">
+            <ul className="text-list">
               <li><b>Informações Médicas:</b> Informe ao médico sobre qualquer metal no corpo, alergias ou
                 histórico de doenças, pois algumas condições podem afetar o exame </li>
 
@@ -100,7 +139,7 @@ function Contato() {
                 exame.</li>
             </ul>
           </div>
-          <img class="img-ani2" src={sub} alt="sub"/>
+          <img className="img-ani2" src={sub} alt="sub"/>
         </div>
       </section>
     </>

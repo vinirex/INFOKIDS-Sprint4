@@ -58,10 +58,20 @@ header section {
     color: #fff;
 }
 
+#text{
+    color: #fff;
+}
+
+#form-test{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 h1 {
     font-family: 'Rubik', sans-serif;
     font-size: 2.5rem;
-    padding: 0 3rem 0 0;
+    padding: 0;
 }
 
 h2 {

@@ -6,6 +6,10 @@
     src: url('/fonts/static/Rubik-Regular.ttf');
 }
 
+body{
+    background: linear-gradient(90deg, rgba(12, 53, 106, 1) 0%, rgba(1, 116, 190, 1) 100%);
+  }
+
 header {
     background: linear-gradient(90deg, rgba(12, 53, 106, 1) 0%, rgba(1, 116, 190, 1) 100%);
     padding: 3rem;
@@ -159,6 +163,7 @@ h2 {
     flex-direction: center;
 }
 
+
 .login{
     background-color: #fff;
     display: flex;
@@ -264,7 +269,6 @@ h2 {
 }
 
 .group-member {
-
     padding: 1rem;
 }
 

@@ -1,5 +1,4 @@
 import { } from 'react';
-import '../css/estilo.css';
 import '../css/style.scss';
 import sub from '../assets/sub.png';
 import med from '../assets/hand -w-syringe.png';

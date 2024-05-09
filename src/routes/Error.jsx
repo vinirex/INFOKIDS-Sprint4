@@ -1,8 +1,13 @@
-
+import err from '../assets/error404.jpg';
+import '../css/style.scss';
 function Error() {
   return (
   <>
-  <h1>404-Página não encontrada !!!</h1>
+  <section className="error">
+    <h1>404-Página não encontrada !!!</h1>
+    <img src={err} alt="ERRO" />
+  </section>
+  
   </>
   )
 }

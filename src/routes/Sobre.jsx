@@ -1,5 +1,4 @@
 import {} from 'react';
-import '../css/estilo.css';
 import '../css/style.scss';
 import vini from '../assets/vini-img.png'
 import diogo from '../assets/diogo-img.png'
@@ -16,7 +15,7 @@ function Sobre() {
         <section id="grupo">
             <div>
                 <img className="ppl-grp" src={vini} alt="Vinicius Silva"/>
-                <p class="txt">Vinicius Silva</p>
+                <p className="txt">Vinicius Silva</p>
             </div>
             <div>
                 <img className="ppl-grp" src={didoff} alt="Victor Didoff"/>

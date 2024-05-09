@@ -1,5 +1,4 @@
 import {useRef} from 'react';
-import '../css/estilo.css';
 import '../css/style.scss';
 
 function Admin() {

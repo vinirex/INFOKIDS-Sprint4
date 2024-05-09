@@ -1,10 +1,10 @@
 $main-color: #333333;
-$title-color: #f9f9f9;
-$background-color: #058A9F;
+$title-color: #ffffff;
+$background-color: rgba(255, 196, 54, 1);
 $dark-text-color: #000000f0;
-$text-color: #000000;
-$primary-color: #0C356A;
-$secondary-color: #0174BE;
+$text-color: #ffffff;
+$primary-color: rgb(12, 53, 106);
+$secondary-color: rgb(1, 116, 190);
 
 $white: #ffffff;
 $dark: #000000;
@@ -33,7 +33,7 @@ $dark: #000000;
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(12, 53, 106, 1);
+    background: $primary-color;
     border-radius: 1rem;
   }
 

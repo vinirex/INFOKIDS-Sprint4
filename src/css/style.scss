@@ -159,6 +159,42 @@ h2 {
     flex-direction: center;
 }
 
+.login{
+    background-color: #fff;
+    display: flex;
+    border-radius: 2rem;
+    flex-direction: column;
+    width: 40%;
+    padding: 5rem;
+    margin: 3rem; 
+}
+
+.login input {
+    border-radius: 1rem;
+    padding: .2rem;
+
+}
+
+.login select {
+    border-radius: 1rem;
+    padding: .2rem;
+}
+
+.env {
+    margin: 1rem;
+    padding: .5rem;
+    background-color: rgba(1, 116, 190, 1);
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+    transition: 450ms ease-in-out;
+}
+
+.env:hover {
+    background-color: rgba(12, 53, 106, 1);
+}
+
+
 .txt {
     color: #fff;
     font-size: 2rem;

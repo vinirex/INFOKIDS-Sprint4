@@ -1,5 +1,5 @@
 import {useRef} from 'react';
-import '../css/style.scss';
+import '../css/styles.scss';
 
 function Admin() {
     /* Hook- useRef ele retorna uma referencia a um elemento ou componentsem tem que ter que ser

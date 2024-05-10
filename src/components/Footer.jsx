@@ -1,5 +1,6 @@
 import { } from 'react';
 import '../css/style.scss';
+import '../css/styles.scss';
 
 
 

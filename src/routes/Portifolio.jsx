@@ -5,7 +5,6 @@ function Portifolio() {
 
   return (
     <>  
-      
       <section className="blue-gradien">
         <div className ="div-Title">
             <h2>

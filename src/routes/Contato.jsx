@@ -1,11 +1,69 @@
-import { } from 'react';
+
 import '../css/style.scss';
 import sub from '../assets/sub.png';
 import med from '../assets/hand -w-syringe.png';
+import {useState,useEffect} from 'react'
+import { useParams} from 'react-router-dom'
 
 
 function Contato() {
 
+  let {id} = useParams();
+    
+    //HOOK-useState manipula o estado da variavel(add ou alterar)
+    const [novoexame, setNovoExame]= useState({
+        id,
+        nome:"",
+        testeExame:"",
+        data:"",
+    });
+
+    //Função handleChange
+
+    const handleChange=(e)=>{
+        //...(spred) pega os dados antigos e junta com os dados novos
+        setNovoExame({...novoexame,[e.target.name]:e.target.value})
+    }
+
+    //variavel metodo para adicionar ou alterar
+
+    let metodo="post"
+    if(id){
+        metodo="put"
+    }
+
+    //Função handleSubmit
+    const  handleSubmit =(e)=>{
+        //previne qualquer ação do form
+        e.preventDefault();
+        fetch(`http://localhost:5000/exames/${id ? id:""}
+        `,{
+            method:metodo,
+            headers:{
+                'Content-Type':'application/json',
+            },
+            body:JSON.stringify(novoexame),
+        }).then(()=>{
+            window.location=""
+        })
+    }
+
+        //criando o efeito colateral para atualizar a pagina em tempo real
+
+        useEffect(()=>{
+    
+          if(id){
+              fetch(`http://localhost:5000/exames/${id}`)
+              .then((res)=>{
+                  return res.json();
+              })
+              .then((data)=>{
+                  setNovoExame(data)
+              })
+          }
+  
+      },[id]); //retorno callback
+  
   
   
   function mostrarExame (){
@@ -47,16 +105,23 @@ function Contato() {
       <section id="form-test" className="active">
         <form id="form-insert">
           <label form="nome">Nome:</label>
-          <input type="text" name="nome" id="nome" />
+          <input
+                type="text"
+                name="nome"
+                id='nome'
+                value={novoexame.nome}
+                placeholder="Digite o nome do exame"
+                onChange={handleChange}                
+                />
 
           <label form="Exame">Exame:</label>
-          <select id="exames" name="exames">
+          <select id="exames" name="exames" onChange={handleChange}>
             <option value="Exame de Sangue">Exame de Sangue</option>
             <option value="Resonâcia Magnética">Resonacia Magnetica</option>
           </select>
 
           <label form="quantidade">Data do Exame:</label>
-          <input type="date" name="data" id="data" />
+          <input type="date" name="data" id="data" value={novoexame.data} onChange={handleChange} />
 
           <button type="button" id="enviar" onClick={mostrarExame}>Agendar</button>
         </form>

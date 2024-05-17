@@ -13,17 +13,17 @@ function Sobre() {
             </h1>
         </section>
         <section id="grupo">
-            <div>
+            <div className='login'>
                 <img className="ppl-grp" src={vini} alt="Vinicius Silva"/>
-                <p className="txt">Vinicius Silva</p>
+                <h2>Vinicius Silva</h2>
             </div>
-            <div>
+            <div className='login'>
                 <img className="ppl-grp" src={didoff} alt="Victor Didoff"/>
-                <p className="txt">Victor Didoff</p>
+                <h2>Victor Didoff</h2>
             </div>
-            <div>
+            <div className='login'>
                 <img className="ppl-grp" src={diogo} alt="Diogo Julio"/>
-                <p className="txt">Diogo Julio</p>
+                <h2>Diogo Julio</h2>
             </div>
         </section>
     </>

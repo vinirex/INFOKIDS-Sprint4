@@ -30,7 +30,7 @@ function topFunction() {
     <>
     <button onClick={topFunction} id="scrlBtn" title="Go to top">A</button>
     <section className='content'>
-      <h5>@2024-todos os direitos reservados.</h5>
+      <h5 className='white'>@2024-todos os direitos reservados.</h5>
       </section>
     </>
   );

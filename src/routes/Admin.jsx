@@ -27,21 +27,21 @@ function Admin() {
     };
   
     return (
-      <section className="login">
+      <section className="login-section">
         {/*condição ternária */}
         {getUsuario && getSenha ? (
           <Exames/>
         ) : (
-          <form onSubmit={handleSubmit} >
+          <form className="login" onSubmit={handleSubmit} >
             <p>
-              USUÁRIO:
+              Usuário:
               <input type="text" placeholder="Digite seu Usuário" ref={usuario} />
             </p>
             <p>
-              SENHA:
+              Senha:
               <input type="password" placeholder="Digite sua senha" ref={senha} />
             </p>
-            <button className='env' type="submit">ENTRAR</button>
+            <button className='env' type="submit">Entrar</button>
           </form>
         )}
       </section>

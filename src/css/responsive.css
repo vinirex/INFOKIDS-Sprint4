@@ -7,7 +7,7 @@
     #problem,
     #motivation,
     #group,#form-test,
-    header section,
+    header section,.login,
     .container {
         display: flex;
         flex-direction: column;
@@ -30,11 +30,13 @@
       box-sizing: content-box !important;
     }
 
-    .contlist {
+    .contlist,.login {
       display: flex;
       flex-direction: column;
       width: 100%;
-
+  }
+  .login{
+    width: 40%;
   }
 }
 
@@ -60,13 +62,14 @@
       text-align: left;
     }
 
-    #form-insert{
+    #form-insert,form{
       box-sizing: content-box !important;
     }
     .contlist{
       width: 95%;
     }
-    .login{
+    .login,form{
       width: 80%;
+      display: block;
     }
   }

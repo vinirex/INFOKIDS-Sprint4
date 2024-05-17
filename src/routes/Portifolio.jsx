@@ -6,43 +6,43 @@ function Portifolio() {
   return (
     <>  
       <section className="blue-gradien">
-        <div className ="div-Title">
+        <div className ="div-title">
             <h2>
                 Entendimento do Problema
             </h2>
         </div>
-        <div className="div-Content">
+        <div>
             <p className="content">
                 Esse desafio que foi imposto para nós é de grande importância pelo fato de estar envolvendo crianças que estão em situação super complicada e seus parentes. E para podermos ajudá-los a ter uma boa relação entre médico e paciente que tivemos a ideia do  nosso projeto.
             </p>
         </div>
     </section>
     <section className="yellow-gradien">
-        <div className="div-Title">
+        <div>
             <h2>
                 Identificação do cliente e suas dores
             </h2>
         </div>
-        <div className="div-Content">
+        <div>
             <p className="content">
                 Um dos maiores problemas no tratamento de câncer em crianças é fazer com que os pais entendam os procedimentos e tratamentos que precisam ser feitos e também fazer com que as próprias crianças não tenham medo de fazer tais procedimentos e tratamentos, por que com esse “medo” acaba dificultando o trabalho dos médicos que é ajudar essas crianças.
             </p>
         </div>
     </section>
     <section className="blue-gradien">
-        <div className="div-Title">
+        <div>
             <h2>
                 Análise das dores do cliente
             </h2>
         </div>
-        <div className="div-Content">
+        <div>
             <p className="content">
                 Um dos maiores problemas no tratamento de câncer em crianças é fazer com que os pais entendam os procedimentos e tratamentos que precisam ser feitos e também fazer com que as próprias crianças não tenham medo de fazer tais procedimentos e tratamentos, por que com esse “medo” acaba dificultando o trabalho dos médicos que é ajudar essas crianças.
             </p>
         </div>
     </section>
     <section className="yellow-gradien">
-        <div className="div-Title">
+        <div>
             <h2 className="yellow-gradien">
                 Ideia de solução
             </h2>

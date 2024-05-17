@@ -2,8 +2,8 @@
     "exames":[
         {
             "id":1,
-            "nome":"teste",
-            "tipoExame":"Resonância",
+            "nome":"Paciente 1",
+            "tipoExame":"Resonância Magnética",
             "data":"10/05/2024"
         }
     ]
